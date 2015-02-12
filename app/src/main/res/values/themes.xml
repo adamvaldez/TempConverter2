@@ -2,5 +2,6 @@
 <resources>
     <style name="adamstheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="android:textSize">25sp</item>
+        <item name="android:background">#3F51B5</item>
     </style>
 </resources>

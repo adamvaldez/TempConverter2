@@ -1,7 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:clickable="true">
 
     <tempconverter2.valdez.com.tempconverter2.VerticalSeekBar
         android:id="@+id/seekBar"
@@ -18,56 +19,67 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Temp Converter 2.0"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Fahrenheit"
         android:id="@+id/textView2"
-        android:textSize="25dp"
         android:textStyle="bold"
-        android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0.00"
+        android:text="32.0"
         android:id="@+id/fahrenheitText"
-        android:textSize="25dp"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Celsius"
         android:id="@+id/textView4"
-        android:textSize="25dp"
         android:textStyle="bold"
-        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
         android:layout_below="@+id/seekBar"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView" />
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0.00"
         android:id="@+id/celsiusText"
-        android:textSize="25dp"
-        android:layout_alignTop="@+id/textView4"
-        android:layout_toRightOf="@+id/seekBar"
-        android:layout_toEndOf="@+id/seekBar" />
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelvin"
+        android:id="@+id/KelvinLabel"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/celsiusText"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:id="@+id/kelvinText"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/KelvinLabel"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
 
 </RelativeLayout>
